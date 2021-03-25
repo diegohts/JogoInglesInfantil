@@ -15,10 +15,14 @@ public class PhasePasses : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player")) {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            if (SceneManager.GetActiveScene().buildIndex.Equals(5))
+            {
+                // Application.LoadLevel(0);
+                SceneManager.LoadScene(0);
+            }
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        } else if (other.gameObject.CompareTag("Player") && SceneManager.GetActiveScene().buildIndex == 5) {
-            Application.LoadLevel(0);
         }
     }
 }

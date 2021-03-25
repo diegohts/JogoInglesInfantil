@@ -178,7 +178,7 @@ public class Player : MonoBehaviour
             UpdateCoinsUI(); 
 
             if (gameManager.coins >= 100) {
-                health++;
+                health = health < 5 ? health++ : maxhealth;
                 UpdateHealthUI();
                 SetPlayerStatus(); 
                 gameManager.coins -= 100;
