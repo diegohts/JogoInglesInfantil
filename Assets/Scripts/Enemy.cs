@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health; //vida
-    public float speed; //corrida
-    public float attackDistance; //distancia pro ataque
-    public GameObject coin; //objeto instanciado quando os inimigos morrerem, a moeda
-    public GameObject deathAnimation; //coloca um sprite quando os inimigos morrerem
+    public int health; 
+    public float speed; 
+    public float attackDistance; 
+    public GameObject coin; 
+    public GameObject deathAnimation; 
 
     protected Animator anim;
-    protected bool facingRight = true; //verifica se esta pra esquerda ou direita
-    protected Transform target; //alvo perseguido
-    protected float targetDistance; //distancia do alvo
+    protected bool facingRight = true; 
+    protected Transform target; 
+    protected float targetDistance; 
     protected Rigidbody2D rb2d;
     protected SpriteRenderer sprite;
 

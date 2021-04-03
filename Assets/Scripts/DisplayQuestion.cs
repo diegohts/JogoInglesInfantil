@@ -6,13 +6,17 @@ using UnityEngine.UI;
 public class DisplayQuestion : MonoBehaviour
 {
     public GameObject QuizScene;
+    public int contador = 0;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         Player player = other.GetComponent<Player>();
 
         if (player != null) {
-            QuizScene.SetActive(true);
+            if (contador == 0) {
+                QuizScene.SetActive(true);
+                contador = 1;
+            }
         }    
     }
 }

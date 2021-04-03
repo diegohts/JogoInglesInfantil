@@ -36,21 +36,6 @@ public class Main : MonoBehaviour
         Application.LoadLevel(nameScene);
     }
 
-    private void OnDisable()
-    {
-       /* if ((gameObject.name == "Miner" && SceneManager.GetActiveScene().buildIndex == 1)) //chega no final da fase muda pra proxima
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //isso faz com que passede fase pegando a cena ataul e acrescentando 1 para a proxima
-        }
-        else if ((gameObject.name == "Miner" && SceneManager.GetActiveScene().buildIndex == 2))
-        {
-            Application.LoadLevel(0);
-        }*/
-
-        //if(gameObject.name == "Water")
-    }
-
-    /* Para excluir as estrelinhas e a pontuação */
     public void resetScores()
     {
         PlayerPrefs.DeleteAll();

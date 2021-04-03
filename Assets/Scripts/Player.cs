@@ -7,22 +7,22 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour
 {
     [Header("Player Parameters")]
-    public float speed = 5f; // controla a velocidade
-    public float jumpForce = 600f; // forca do pulo
+    public float speed = 5f; 
+    public float jumpForce = 600f; 
     public float damageTime = 1f; 
 
     private Animator anim;
     private Rigidbody2D rb2d;
-    private bool facingRight = true; // verifica se esta pela esquerda ou direita, pra mudar o sprite
-    private bool jump = false; // checa o pulo
-    private bool onGround = false; // verifica se esta no chao
+    private bool facingRight = true; 
+    private bool jump = false; 
+    private bool onGround = false; 
     public Transform groundCheck;
     private float hForce = 0; 
-    private bool tookDamage = false; // se toma dano ou nao
+    private bool tookDamage = false; 
     private bool doubleJump;
 
-    public int health; // vida atual do personagem
-    public int maxhealth; // vida maxima do personagem
+    public int health; 
+    public int maxhealth; 
     private int healthTemp;
    
     GameManager gameManager; 
@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     public GameObject sword;
     public int damage;
 
-    private bool isDead = false; // verifica se esta morto ou nao
+    private bool isDead = false;
 
     void Start()
     {
@@ -101,8 +101,7 @@ public class Player : MonoBehaviour
     private void FixedUpdate() 
     {
         if (!isDead) {  
-            //hForce = Input.GetAxisRaw("Horizontal"); //se apertar pra direita, hforce= 1, esquerda = -1, parado = 0 
-            hForce = CrossPlatformInputManager.GetAxis("Horizontal"); //adaptado celular
+            hForce = CrossPlatformInputManager.GetAxis("Horizontal"); 
             anim.SetInteger("Speed", (int)hForce);  
             rb2d.velocity = new Vector2(hForce * speed, rb2d.velocity.y);
             
@@ -178,7 +177,9 @@ public class Player : MonoBehaviour
             UpdateCoinsUI(); 
 
             if (gameManager.coins >= 100) {
-                health = health < 5 ? health++ : maxhealth;
+                if (health < 5) {
+                    health++;
+                }
                 UpdateHealthUI();
                 SetPlayerStatus(); 
                 gameManager.coins -= 100;
@@ -200,7 +201,7 @@ public class Player : MonoBehaviour
             audioS.Play();
             Invoke("ReloadScene", 1f); 
         } else {
-            Physics2D.IgnoreLayerCollision(9, 10); // Ignora o valor das layer, 9 do player e 10 de inimigo
+            Physics2D.IgnoreLayerCollision(9, 10); 
 
             for (float i = 0; i < damageTime; i += 0.2f) { 
                 GetComponent<SpriteRenderer>().enabled = false; 
@@ -209,7 +210,7 @@ public class Player : MonoBehaviour
                 yield return new WaitForSeconds(0.1f);    
             }
 
-            Physics2D.IgnoreLayerCollision(9, 10, false); // Volta a colidir normalmente
+            Physics2D.IgnoreLayerCollision(9, 10, false); 
             tookDamage = false;
         }
     }

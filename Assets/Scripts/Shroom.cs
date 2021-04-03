@@ -5,7 +5,6 @@ using UnityEngine;
 public class Shroom : Enemy
 {
     public float walkDistance; 
-
     private bool walk; 
 
     void Start()
@@ -15,7 +14,6 @@ public class Shroom : Enemy
     protected override void Update()
     {
         base.Update();
-        anim.SetBool("Walk", walk);
 
         if (Mathf.Abs(targetDistance) < walkDistance) {
             walk = true;

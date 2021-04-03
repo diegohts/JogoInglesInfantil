@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Reply : MonoBehaviour
 {
-    private int idTheme;             // id do Tema
-    private int idQuestion;          // id da pergunta
+    private int idTheme;             
+    private int idQuestion;          
 
     public Text question;
     public Text answerA;
@@ -17,16 +17,16 @@ public class Reply : MonoBehaviour
     public Image imageQuestion;
     public AudioSource ButtonImage;
 
-    public string[] questions;       // armazena todas as perguntas
-    public string[] alternativeA;    // armazena todas as alternativas A
-    public string[] alternativeB;    // armazena todas as alternativas B 
-    public string[] alternativeC;    // armazena todas as alternativas C
-    public string[] correct;         // armazena todas as alternativas corretas
+    public string[] questions;       
+    public string[] alternativeA;    
+    public string[] alternativeB;    
+    public string[] alternativeC;    
+    public string[] correct;         
 
-    private float hits;              // acertos
-    private float questionsNumbers;  // numero de perguntas 
-    private int finalNote;           // nota final
-    private float average;           // media
+    private float hits;              
+    private float questionsNumbers;  
+    private int finalNote;           
+    private float average;           
 
     public Sprite[] imageQuestions;
     public AudioClip[] audios;
@@ -83,7 +83,7 @@ public class Reply : MonoBehaviour
             infoQuestion.text = "Respondendo " + (idQuestion + 1).ToString() + " de " + questionsNumbers + " perguntas!";
 
         } else {
-            average = 10 * (hits / questionsNumbers); // media = acertos / numero de questoes
+            average = 10 * (hits / questionsNumbers); 
             finalNote = Mathf.RoundToInt(average); 
 
             if (finalNote > PlayerPrefs.GetInt("finalNote" + idTheme.ToString())) { 

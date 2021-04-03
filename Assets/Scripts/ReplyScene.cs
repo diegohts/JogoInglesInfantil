@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
 
-
 public class ReplyScene : MonoBehaviour
 {
-    private int idQuestion;          // id da pergunta
-    private string alt;
+    private int idQuestion;          
 
     public Text question;
     public Text answerA;
@@ -21,22 +19,24 @@ public class ReplyScene : MonoBehaviour
     public Image imageQuestion;
     public AudioSource ButtonImage;
 
-    public string[] questions;       // armazena todas as perguntas
-    public string[] alternativeA;    // armazena todas as alternativas A
-    public string[] alternativeB;    // armazena todas as alternativas B 
-    public string[] alternativeC;    // armazena todas as alternativas C
-    public string[] correct;         // armazena todas as alternativas corretas
+    public string[] questions;       
+    public string[] alternativeA;    
+    public string[] alternativeB;     
+    public string[] alternativeC;    
+    public string[] correct;         
 
-    private int questionsNumbers;    // numero de perguntas 
+    private int questionsNumbers;    
     private int number;
 
     public Sprite[] imageQuestions;
     public AudioClip[] audios;
+    public AudioSource audioSource;
 
     void Start()
     {
         CanvasPrimary.SetActive(false);
         QuizScene.SetActive(true);
+        audioSource.mute = true;
 
         number = Random.Range(0,9);
 
@@ -61,6 +61,7 @@ public class ReplyScene : MonoBehaviour
             if (alternativeA[idQuestion] == correct[idQuestion]) {
                 QuizScene.SetActive(false);
                 CanvasPrimary.SetActive(true);
+                audioSource.mute = false;
                 Time.timeScale = 1;
             } else { 
                 infoQuestion.enabled = true;
@@ -70,6 +71,7 @@ public class ReplyScene : MonoBehaviour
             if (alternativeB[idQuestion] == correct[idQuestion]) {
                 QuizScene.SetActive(false);
                 CanvasPrimary.SetActive(true);
+                audioSource.mute = false;
                 Time.timeScale = 1;
             } else {
                 infoQuestion.enabled = true;
@@ -79,6 +81,7 @@ public class ReplyScene : MonoBehaviour
             if (alternativeC[idQuestion] == correct[idQuestion]) {
                 QuizScene.SetActive(false);
                 CanvasPrimary.SetActive(true);
+                audioSource.mute = false;
                 Time.timeScale = 1;
             } else {
                 infoQuestion.enabled = true;
