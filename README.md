@@ -5,7 +5,7 @@
 </h1>  
 <p align="center">Esse projeto de Trabalho de Conclusão de Curso foi um desenvolvimento de um jogo 2D sobre o tema de inglês infantil para crianças do ensino fundamental, utilizando ferramentas como Unity e C#.</p>
 
-Tabela de conteúdos
+<b>Tabela de conteúdos</b>
 
 - [Sobre](#Sobre)
 - [História](#História)
