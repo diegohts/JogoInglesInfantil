@@ -23,7 +23,7 @@ A criação do jogo também visa que as crianças possam adquirir conhecimentos 
 
 Nele também são empregados recursos que auxiliam no processo de aprendizado, tais como ilustrações por meio de imagens, vocabulários de palavras e sons pronunciados em inglês que ajudam as crianças a memorizar e assimilar melhor as palavras apresentadas.
 
-# Historia
+# História
 
 O Jogo Inglês Infantil tem como personagem principal o cavaleiro que com sua espada irá combater diversos inimigos e vencer os obstáculos encontrados no desenrolar das fases. O jogador também deverá coletar as moedas que encontrar pelo caminho para evitar que seja eliminado do jogo na hipótese de perder todas as suas vidas. Então, o jogador será desafiado a responder questões referente ao conteúdo básico da Língua Inglesa baseado em um vocabulário de palavras.
 
