@@ -1,7 +1,7 @@
 # Jogo Inglês Infantil
 
 <h1 align ="center">
-  <img alt="Logo do Jogo Inglês Infantil" title="Logo do Jogo Inglês Infantil" src="animacao.gif">
+  <img alt="Logo do Jogo Inglês Infantil" title="Logo do Jogo Inglês Infantil" src="./images/animacao.gif">
 </h1>  
 <p align="center">Esse projeto de Trabalho de Conclusão de Curso foi um desenvolvimento de um jogo 2D sobre o tema de inglês infantil para crianças do ensino fundamental, utilizando ferramentas como Unity e C#.</p>
 
@@ -36,7 +36,7 @@ Vale destacar também que, diferente do Modo Aventura aqui descrito, existe o Mo
 O jogo está disponível no Google Play e para realizar o download do jogo “<i>Jogo Inglês Infantil</i>” na Google Play Store, pode ser procurando pelo nome do aplicativo na loja ou através do seguinte link: <a href="http://bit.ly/JogoInglesInfantil"> http://bit.ly/JogoInglesInfantil</a> ou através do QR Code:
 
 <h3 align ="center">
-  <img alt="QR code do Jogo Inglês Infantil" title="QR code do Jogo Inglês Infantil" src="QrCodeJogo.png">
+  <img alt="QR code do Jogo Inglês Infantil" title="QR code do Jogo Inglês Infantil" src="./images/QrCodeJogo.png">
 </h3>
 
 # Informações
