@@ -46,10 +46,10 @@ Todas as informações a respeito do jogo, estão presentes através do site: <a
 Como informações de:
 
 <ol>
-    <li><a href="https://jogoinglesinfantil.blogspot.com/2021/04/privacy-policy-para-idioma-portugues.html"> Política de Privacidade</a><li>
-    <li><a href="https://jogoinglesinfantil.blogspot.com/2021/04/faca-o-download-do-arquivo.html"> Download em aparelhos com versões antigas do Android (inferior à 7.1)</a><li>
-    <li><a href="https://jogoinglesinfantil.blogspot.com/2021/12/termo-de-consentimento-para-uso-do.html"> Termo de consentimento para uso do áudio no jogo</a><li>
-    <li><a href="https://jogoinglesinfantil.blogspot.com"> Notícias das novas atualizações que podem ser acompanhadas no site</a><li>
+    <li><a href="https://jogoinglesinfantil.blogspot.com/2021/04/privacy-policy-para-idioma-portugues.html"> Política de Privacidade</a>;</li>
+    <li><a href="https://jogoinglesinfantil.blogspot.com/2021/04/faca-o-download-do-arquivo.html"> Download em aparelhos com versões antigas do Android (inferior à 7.1)</a>;</li>
+    <li><a href="https://jogoinglesinfantil.blogspot.com/2021/12/termo-de-consentimento-para-uso-do.html"> Termo de consentimento para uso do áudio no jogo</a>;</li>
+    <li><a href="https://jogoinglesinfantil.blogspot.com"> Notícias das novas atualizações que podem ser acompanhadas no site</a>.</li>
 </ol>
 
 # Tecnologias
